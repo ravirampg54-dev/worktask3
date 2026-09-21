@@ -1,19 +1,19 @@
-# Welcome to your Expo app 👋
+# Workspace Finder
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An Expo Router app for browsing nearby workspaces.
 
 ## Get started
 
-1. Install dependencies
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Start the development server:
 
    ```bash
-   npx expo start
+   npm run web
    ```
 
 In the output, you'll find options to open the app in a
@@ -25,7 +25,21 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Production build
+
+Create the static web output used by Vercel:
+
+```bash
+npm run build
+```
+
+The generated site is written to `dist/`.
+
+## Deploy to Vercel
+
+Import the GitHub repository into Vercel. The included `vercel.json` runs `npm run build` and serves the generated `dist/` directory.
+
+## Reset the project
 
 When you're ready, run:
 
@@ -33,7 +47,7 @@ When you're ready, run:
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This command resets the starter project structure if needed.
 
 ### Other setup steps
 
